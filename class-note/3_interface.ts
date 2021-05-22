@@ -54,16 +54,16 @@ let obj: StringRegexDictionary = {
 Object.keys(obj).forEach(function (value) {}); // value는 string 타입이라고 자동으로 추론 가능
 
 // 인터페이스 확장
-interface Person {
+interface People {
   name: string;
   age: number;
 }
 
-interface Developer extends Person {
+interface Dev extends People {
   language: string;
 }
 
-let captain: Developer = {
+let captain: Dev = {
   name: "baek",
   age: 25,
   language: "hi",
